@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Apr 05 00:03:41 2018
+# Process ID: 7560
+# Current directory: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8456 C:\Users\gagu2_000\Desktop\audio_effects\audio_effects\audio_effects.xpr
+# Log file: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/vivado.log
+# Journal file: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 771.359 ; gain = 108.125
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Apr 05 00:14:06 2018] Launched synth_1...
+Run output will be captured here: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.runs/synth_1/runme.log
+[Thu Apr 05 00:14:06 2018] Launched impl_1...
+Run output will be captured here: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.runs/impl_1/runme.log
+reset_run synth_1 -noclean_dir 
+launch_runs impl_1 -to_step write_bitstream
+[Thu Apr 05 00:22:03 2018] Launched synth_1...
+Run output will be captured here: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.runs/synth_1/runme.log
+[Thu Apr 05 00:22:03 2018] Launched impl_1...
+Run output will be captured here: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.runs/impl_1/runme.log
+reorder_files -fileset constrs_1 -before C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Apr 05 00:40:18 2018] Launched synth_1...
+Run output will be captured here: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.runs/synth_1/runme.log
+[Thu Apr 05 00:40:18 2018] Launched impl_1...
+Run output will be captured here: C:/Users/gagu2_000/Desktop/audio_effects/audio_effects/audio_effects.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 05 00:47:10 2018...

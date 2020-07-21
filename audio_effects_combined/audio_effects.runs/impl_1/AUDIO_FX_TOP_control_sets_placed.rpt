@@ -1,0 +1,133 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Apr 07 22:29:31 2018
+| Host         : LAPTOP-B9VTK1LA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
+| Design       : AUDIO_FX_TOP
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    80 |
+| Unused register locations in slices containing registers |   124 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             431 |          169 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1824 |          464 |
+| Yes          | No                    | No                     |              12 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              41 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+-------------------------------+---------------------------------------------+------------------+----------------+
+|                Clock Signal                |         Enable Signal         |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++--------------------------------------------+-------------------------------+---------------------------------------------+------------------+----------------+
+|  clock_50M/clk_50M                         |                               |                                             |                1 |              1 |
+|  pushbutton/sound_reg[0]_i_2_n_0           |                               |                                             |                1 |              1 |
+|  songs_mod/m_reg[0]_i_2_n_0                |                               |                                             |                1 |              1 |
+|  amplify_song_mod/SP_SONG_MOD/clk_50hz/LED |                               |                                             |                2 |              2 |
+|  amplify_song_mod/SP_SONG_MOD/dff1/CLK     |                               |                                             |                1 |              2 |
+|  pushbutton/SPUP/clk_50hz/LED              |                               |                                             |                1 |              2 |
+|  pushbutton/SPUP/dff1/CLK                  |                               |                                             |                2 |              2 |
+|  u2/J_DA2_Pin4_OBUF                        |                               |                                             |                1 |              2 |
+|  loud/SP_LOUD_MOD/clk_50hz/LED             |                               |                                             |                1 |              2 |
+|  loud/SP_LOUD_MOD/dff1/CLK                 |                               |                                             |                1 |              2 |
+|  u2/J_DA2_Pin4_OBUF                        | u2/shiftCounter[3]_i_1_n_0    | u2/temp1[15]_i_1_n_0                        |                2 |              4 |
+|  u2/J_DA2_Pin4_OBUF                        | u2/temp2                      | u2/temp1[15]_i_1_n_0                        |                1 |              4 |
+|  u2/J_DA2_Pin4_OBUF                        | u2/temp2                      |                                             |                6 |             12 |
+| ~u1/J_MIC3_Pin4_OBUF                       |                               |                                             |                3 |             12 |
+|  po/data_out_reg[11]_i_2_n_0               |                               |                                             |               12 |             12 |
+|  CLK_IBUF_BUFG                             |                               | J_MIC3_Pin1_OBUF_BUFG                       |                3 |             12 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0011/buffer2/i_rep_bsel[11]_i_1__2_n_0  |                5 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0101/buffer2/i_rep_bsel[11]_i_1__4_n_0  |                7 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0101/buffer1/i_rep_bsel[11]_i_1__3_n_0  |                5 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0111/buffer2/i_rep_bsel[11]_i_1__6_n_0  |                7 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0111/buffer1/i_rep_bsel[11]_i_1__5_n_0  |                5 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d1001/buffer2/i_rep_bsel[11]_i_1__8_n_0  |                6 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d1001/buffer1/i_rep_bsel[11]_i_1__7_n_0  |                6 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d1011/buffer2/i_rep_bsel[11]_i_1__10_n_0 |                6 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d1011/buffer1/i_rep_bsel[11]_i_1__9_n_0  |                6 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d1101/buffer1/i_rep_bsel[11]_i_1__11_n_0 |                5 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d1101/buffer2/i_rep_bsel[11]_i_1__12_n_0 |                6 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0011/buffer1/i_rep_bsel[11]_i_1__1_n_0  |                5 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0001/buffer2/i_rep_bsel[11]_i_1__0_n_0  |                7 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | po/d0001/buffer1/i_rep_bsel[11]_i_1_n_0     |                7 |             22 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/B4/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/G5/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/A4/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/A5/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/A6/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/A7/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/C6/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/B5/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/B6/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/B7/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/C4/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/C5/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/D5/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/C7/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/D4/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/D5/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/D6/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/D7/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/E4/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/E5/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/E6/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/E7/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/F4/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/F5/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/A4f/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/A5f/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/B4/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/B4f/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/C5/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/G4/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/D5f/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/E4/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/F6/clear                         |                8 |             32 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | osd/i[31]_i_1_n_0                           |                9 |             32 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               | osd/j[31]_i_1_n_0                           |                9 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/G5/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/G6/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/G7/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | pushbutton/F7/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | clock_20k/clear                             |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | clock_50M/clear                             |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/A4/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/E4f/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/E5f/clear                         |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/F4/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/F5/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                             |                               | songs_mod/G4/clear                          |                8 |             32 |
+|  CLK_1K                                    | songs_mod/duration[0]_i_2_n_0 | songs_mod/duration_reg[0]_i_1_n_0           |                9 |             33 |
+|  CLK_IBUF_BUFG                             |                               |                                             |               70 |            142 |
+|  J_MIC3_Pin1_OBUF_BUFG                     |                               |                                             |               72 |            248 |
++--------------------------------------------+-------------------------------+---------------------------------------------+------------------+----------------+
+
+

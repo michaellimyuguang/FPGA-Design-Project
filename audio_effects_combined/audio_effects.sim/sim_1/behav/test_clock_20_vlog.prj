@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../audio_effects.srcs/sources_1/new/clock_generator.v"
+verilog xil_defaultlib  "../../../audio_effects.srcs/sim_1/new/test_clock_generator_20.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

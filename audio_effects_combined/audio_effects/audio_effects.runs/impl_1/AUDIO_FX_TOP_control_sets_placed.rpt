@@ -1,0 +1,99 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Thu Apr 05 00:41:47 2018
+| Host         : Chiang-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AUDIO_FX_TOP_control_sets_placed.rpt
+| Design       : AUDIO_FX_TOP
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    46 |
+| Unused register locations in slices containing registers |    41 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              48 |           35 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1196 |          299 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              19 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+----------------------------+----------------------------+------------------+----------------+
+|           Clock Signal           |        Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++----------------------------------+----------------------------+----------------------------+------------------+----------------+
+|  clock_50M/LED                   |                            |                            |                1 |              1 |
+|  pushbutton/sound_reg[0]_i_2_n_0 |                            |                            |                1 |              1 |
+|  loud/sound_reg[0]_i_2__0_n_0    |                            |                            |                1 |              1 |
+|  pushbutton/SPUP/dff1/CLK        |                            |                            |                1 |              2 |
+|  u2/CLK                          |                            |                            |                2 |              3 |
+|  u2/CLK                          | u2/shiftCounter[3]_i_1_n_0 | u2/temp1[15]_i_1_n_0       |                2 |              4 |
+|  CLK_IBUF_BUFG                   |                            | clock_20k/J_MIC3_Pin1_OBUF |                3 |             12 |
+|  u2/CLK                          | u2/temp2                   | u2/temp1[15]_i_1_n_0       |                3 |             15 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/A4/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/C5/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/C6/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/C7/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/D4/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/D5/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/D6/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/D7/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/E4/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/E5/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/E6/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/A5/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/E7/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/F4/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/F5/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/F6/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/F7/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/G4/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/G5/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/G6/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/G7/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/A6/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/A7/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/B4/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/B5/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/B6/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/B7/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | pushbutton/C4/clear        |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | clock_20k/clear            |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | clock_50M/LED0             |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | loud/A4/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | loud/B4/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | loud/C4/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | loud/D4/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | loud/E4/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | loud/F4/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            | loud/G4/clear              |                8 |             32 |
+|  CLK_IBUF_BUFG                   |                            |                            |               29 |             40 |
++----------------------------------+----------------------------+----------------------------+------------------+----------------+
+
+

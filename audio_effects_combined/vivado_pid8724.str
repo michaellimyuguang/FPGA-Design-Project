@@ -1,0 +1,85 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 8724
+
+Current time: 	4/6/18 7:48:28 PM SGT
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=PMingLiU,name=·s²Ó©úÅé,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	Sharon Chiang
+User home directory: C:/Users/Sharon Chiang
+User working directory: C:/Users/Sharon Chiang/Desktop/audio_effects
+User country: 	TW
+User language: 	zh
+User locale: 	zh_TW
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/Sharon Chiang/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/Sharon Chiang/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	210 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 532 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Sharon Chiang\Desktop\audio_effects\audio_effects.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Sharon Chiang/Desktop/audio_effects/audio_effects.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 42 MB (+41530kb) [00:00:05]
+// [Engine Memory]: 430 MB (+298912kb) [00:00:05]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 520 MB (+72411kb) [00:00:06]
+// [GUI Memory]: 46 MB (+1613kb) [00:00:07]
+// [GUI Memory]: 54 MB (+6022kb) [00:00:08]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 60 MB (+4207kb) [00:00:08]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 34 MB. Current time: 4/6/18 7:48:29 PM SGT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: audio_effects; location: C:/Users/Sharon Chiang/Desktop/audio_effects; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 821.574 ; gain = 156.527 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 549 MB (+3160kb) [00:00:11]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 561 MB. GUI used memory: 34 MB. Current time: 4/6/18 7:49:59 PM SGT
